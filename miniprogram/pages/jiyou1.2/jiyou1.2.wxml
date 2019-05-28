@@ -1,0 +1,16 @@
+<!--pages/jiyou1.2/jiyou1.2.wxml-->
+<view>
+  <swiper indicator-dots="true" autoplay="true" interval="5000">
+    <swiper-item><image src="../../images/huawei.png"/></swiper-item>
+    <swiper-item><image src="../../images/miui9.jpg"/></swiper-item>
+    <swiper-item><image src="../../images/iphoneX.jpg"/></swiper-item>
+  </swiper>
+<view wx:for="{{ne}}" wx:key="xxx" style=" word-break: break-all">
+<text>{{item.content}}</text>
+<text>{{item.content1}}</text>
+<image src="{{item.images}}"></image>
+</view>
+  <view class="round-click">
+   <navigator url='/pages/jiyou1.3/jiyou1.3' >发布帖子</navigator>
+  </view>
+</view>

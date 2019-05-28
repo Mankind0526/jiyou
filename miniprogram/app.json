@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/jiyou1.1/jiyou1.1",
+    "pages/jiyou1.2/jiyou1.2",
+    "pages/jiyou1.3/jiyou1.3",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "机友论坛",
+    "navigationBarTextStyle": "black"
+  }
+}

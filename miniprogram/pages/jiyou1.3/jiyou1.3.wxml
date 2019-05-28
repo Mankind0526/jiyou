@@ -1,0 +1,27 @@
+<!--pages/jiyou1.3/jiyou1.3.wxml-->
+<view class="question-input-area">
+  <view class="question-title-wrap">
+    <input class="question-title" placeholder="请输入标题" maxlength="40" placeholder-style="color:#b3b3b3;font-size:18px;" bindinput="handleTitleInput"></input>
+    <view class="title-input-counter">{{titleCount}}/40</view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" placeholder="请输入问题的正文内容。" maxlength="500" placeholder-style="color:#b3b3b3;font-size:14px;" style="height: 12rem" bindinput="handleContentInput" />
+        <view class="weui-textarea-counter">{{contentCount}}/500</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view>
+  <button class="btn-img" bindtap="chooseImage">选择图片</button>
+</view>
+<scroll-view class="image-group" scroll-x="true">
+<view>
+  <view wx:for="{{images}}" wx:key="xxx"  wx:for-index="idx">
+    <image src='{{images[idx]}}' mode='aspectFill' bindtap="previewImg"/>
+    <icon type='clear' bindtap='removeImg'  data-index="{{idx}}" ></icon>
+   </view>
+  </view>
+</scroll-view>
+<button class="weui-btn" type="primary" bindtap="saveToHistoryServer">发布</button>

@@ -1,0 +1,6 @@
+<view class="container">
+  <image class="avatar" src="../../images/iphone.jpg"  mode="widthFix"></image>
+  <view class="journey-container">
+    <text class="journey" catchtap="onTapJump">欢迎来到机友论坛</text>
+  </view>
+</view>
